@@ -4,12 +4,12 @@
     margin-right: auto;
 }
 
-body{
+body {
     margin-top: 5vh;
     background-color: white;
 }
 
-.header_wrap{
+.header_wrap {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -59,6 +59,20 @@ body{
     margin-bottom: 39px;
 }
 
+.menu_hr {
+    margin-top: 32px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu_hr>hr {
+    border: none;
+    background: rgba(0, 0, 0, 0.03);
+    width: 100%;
+    height: 1px;
+}
+
 .main_title {
     color: #181818;
     font-family: Inter;
@@ -67,22 +81,62 @@ body{
     font-weight: 500;
     line-height: 60px;
     /* 125% */
-
-}
-.container_title{
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 
-.main_button{
-    width: 189px;
-    height: 60px;
+@media (max-width: 1000px) {
+    .main_title {
+        font-size: 40px;
+
+    }
+
+    .header_icons {
+        width: 60px;
+        height: auto;
+    }
+}
+
+
+.main_button {
+    display: inline-flex;
     background-color: #A6C81E;
     border-radius: 10px;
     color: white;
     text-align: center;
+    padding: 20px;
+    gap: 10px;
+    text-decoration: none;
+    justify-content: center;
+    font-family: Inter;
+    font-size: 16px;
+    line-height: 20px;
+    font-style: normal;
+}
+
+.main_button2 {
+    background-color:white;
+    color: #A6C81E;
+    border: 2px solid #A6C81E;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    gap: 10px;
+    text-decoration: none;
+    justify-content: center;
+    font-family: Inter;
+    font-size: 16px;
+    line-height: 20px;
+    font-style: normal;
+    display: flex;
+    width: 1200px;
+    align-items: center;
+
+}
+
+.card {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.card_img {
+    margin-bottom: 20px;
 }
